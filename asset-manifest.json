@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/km-test-case/static/css/main.34de6062.chunk.css",
+    "main.js": "/km-test-case/static/js/main.51860aa4.chunk.js",
+    "main.js.map": "/km-test-case/static/js/main.51860aa4.chunk.js.map",
+    "runtime~main.js": "/km-test-case/static/js/runtime~main.4f8b1b0b.js",
+    "runtime~main.js.map": "/km-test-case/static/js/runtime~main.4f8b1b0b.js.map",
+    "static/js/2.958d9117.chunk.js": "/km-test-case/static/js/2.958d9117.chunk.js",
+    "static/js/2.958d9117.chunk.js.map": "/km-test-case/static/js/2.958d9117.chunk.js.map",
+    "index.html": "/km-test-case/index.html",
+    "precache-manifest.a5766ffe389dbb6424b4013c2f2c06f9.js": "/km-test-case/precache-manifest.a5766ffe389dbb6424b4013c2f2c06f9.js",
+    "service-worker.js": "/km-test-case/service-worker.js",
+    "static/css/main.34de6062.chunk.css.map": "/km-test-case/static/css/main.34de6062.chunk.css.map"
+  }
+}
