@@ -1,46 +1,38 @@
-You can see the working application [here](https://dimik.github.io/km-test-case/).
+### You can see the working application [here](https://dimik.github.io/km-test-case/).
 
-### Assignments
+### The assignee is required to develop a simple React application that displays a list of campaigns that can be filtered by campaign name and date range.
+Requirements:
+1. Create a public GitHub repository for the application.
+2. Use React and Typescript for the application development.
+3. Feel free to use any libraries or tools during development.
+4. Design the application with production-quality code and styling.
 
-The candidate should create a simple react application that shows a list of campaign that can be filtered by campaign name and by date (using a
-date range selector).
+### Application Features:
+Display a single page with the following elements:
+1. A list of campaigns showing:
+- Name
+- Start Date
+- End Date
+- Active status (based on whether the current date falls within the start and end date range)
+- Budget (in USD)
+2. A search form above the list to filter campaigns by name.
+3. A date range component for filtering campaigns by start and end dates.
 
-### Requirements
+### Ensure that:
+1. Campaigns with start dates within the selected date range are displayed.
+2. Campaigns with end dates within the selected date range are displayed.
+3. End dates cannot be selected before start dates.
+4. Campaigns with end dates before start dates are not displayed.
 
-The application should be accessible from a public repository in Github.
-The application must use React.
-There is no restriction on the libraries/tools to use during the development.
-The look and feel of the application is left to the taste of the candidate.
-The application must be written as if it would be released in production.
+### Design Guidelines:
+1. Use your creativity for the UI design.
+2. Display the campaign list in a table format.
+3. Use a green color palette for active campaigns and a red color palette for inactive campaigns.
 
-### Application Requirements
-
-The application should be a simple page with the following elements:
-A list of Campaign which shows
-The Name
-The startDate
-The endDate
-A flag to state if the Campaign is active (a campaign is running when the current date is inside the start-end date range)
-The Budget (in USD dollar)
-A Search Form before the list in order to filter the list by Campaign Name
-A DateRange component that filters the list of campaigns based on a Start and End Date.
-If the campaign has a startDate that is contained in the range, it should show
-If the campaign has an endDate that is contained in the range, it should show.
-You should not be able to select an end-date that is before the start-date.
-If the endDate is before the start Date, the campaign should not show.
-
-### Mockup
-
-The UI look and feel is left to the candidate, use your own taste and make it as beautiful as you can.
-The list should show in some kind of Table.
-The active status should be in the green palette.
-The inactive status should be in the red palette.
-
-### How to test the application
-
-The candidate will expose a global method called &#39;AddCampaigns&#39; that takes an array of Campaigns and will render them.
-This function will be invoked from the browser’s JavaScript console for testing purposes. If it cannot be invoked, the submission will be rejected.
-The method is allowed to be called multiple times. If so, the new campaigns will append to the existing list.
+### Testing the Application:
+1. Implement a global method called ‘AddCampaigns’ that accepts an array of campaigns and renders them in the application.
+2. This method will be called from the browser’s JavaScript console for testing purposes.
+3. Ensure the method can be called multiple times, with new campaigns being added to the existing list.
 
 Example of campaign array that can be passed
 
