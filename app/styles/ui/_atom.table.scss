@@ -1,0 +1,55 @@
+.km-table {
+  --mk-table-bk: var(--c-white);
+  --mk-table-bk-odd: var(--c-gray);
+
+  overflow: auto;
+  table {
+    width: 100%;
+    position: relative;
+    border-collapse: collapse;
+    text-align: left;
+  }
+
+  thead {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    // box-shadow: 0px 1px 8px black;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -0.25rem; // -4px;
+      height: 0.25rem; // 4px;
+
+      background: rgb(126, 126, 126);
+      background: linear-gradient(
+        180deg,
+        rgba(126, 126, 126, 1) 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+    }
+  }
+
+  th,
+  td {
+    background-color: var(--mk-table-bk);
+    padding: var(--space-xs);
+  }
+
+  tbody {
+    font-size: var(--font-sm);
+
+    tr:nth-child(odd) td {
+      background-color: var(--mk-table-bk-odd);
+    }
+  }
+
+  /* first column sticky */
+  tr th:first-child,
+  tr td:first-child {
+    position: sticky;
+    left: 0;
+  }
+}

@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+:root {
+  --font-xs: 0.75rem;
+  --font-sm: 0.875rem;
+  --font-base: 1rem;
+  --font-md: 1.375rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.875rem;
+  --space-base: 1rem;
+}
+
+:root {
+  --c-white: white;
+  --c-black: #2a2a2a;
+  --c-gray: #f4f6f8;
+  --c-dark-gray: #7e7e7e;
+  --c-dark: #202124;
+  --c-succes: green;
+  --c-danger: red;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.font-size-xs {
+  font-size: var(--font-xs);
+}
+
+.font-size-sm {
+  font-size: var(--font-sm);
+}
+
+.font-size-base {
+  font-size: var(--font-base);
+}
+
+.km-input input {
+  appearance: none;
+  width: 100%;
+  padding: var(--space-xs);
+  border: 1px solid var(--c-dark-gray);
+  border-radius: 0.25rem;
+  height: 2.3rem;
+}
+
+.km-table {
+  --mk-table-bk: var(--c-white);
+  --mk-table-bk-odd: var(--c-gray);
+  overflow: auto;
+  /* first column sticky */
+}
+.km-table table {
+  width: 100%;
+  position: relative;
+  border-collapse: collapse;
+  text-align: left;
+}
+.km-table thead {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.km-table thead::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -0.25rem;
+  height: 0.25rem;
+  background: rgb(126, 126, 126);
+  background: linear-gradient(180deg, rgb(126, 126, 126) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.km-table th,
+.km-table td {
+  background-color: var(--mk-table-bk);
+  padding: var(--space-xs);
+}
+.km-table tbody {
+  font-size: var(--font-sm);
+}
+.km-table tbody tr:nth-child(odd) td {
+  background-color: var(--mk-table-bk-odd);
+}
+.km-table tr th:first-child,
+.km-table tr td:first-child {
+  position: sticky;
+  left: 0;
+}
+
+.layout-default {
+  display: flex;
+  flex-direction: column;
+  height: inherit;
+}
+.layout-default header {
+  padding: 0 var(--space-base);
+}
+.layout-default main {
+  flex: 1;
+  overflow: auto;
+  max-height: 100%;
+  padding: 0 var(--space-base);
+}
+.layout-default footer {
+  background-color: var(--c-dark);
+  color: var(--c-white);
+  padding: var(--space-base);
+}
+
+html {
+  font-size: 16px;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  height: inherit;
+  background-color: var(--c-white);
+  color: var(--c-black);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=index.css.map */
