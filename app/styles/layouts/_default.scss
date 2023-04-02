@@ -1,0 +1,22 @@
+.layout-default {
+  display: flex;
+  flex-direction: column;
+  height: inherit;
+
+  header {
+    padding: 0 var(--space-base);
+  }
+
+  main {
+    flex: 1;
+    overflow: auto;
+    max-height: 100%;
+    padding: 0 var(--space-base);
+  }
+
+  footer {
+    background-color: var(--c-dark);
+    color: var(--c-white);
+    padding: var(--space-base);
+  }
+}
